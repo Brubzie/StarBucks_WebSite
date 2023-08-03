@@ -7,8 +7,12 @@
 
 html, body {
     height: 100%;
-    overflow-y: hidden;
     overflow-x: hidden;
+    background-color: white;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
 }
 
 .center {
@@ -19,8 +23,9 @@ html, body {
     padding: 0 2%;
 }
 
-header {
+.start {
     height: 200px;
+    width: auto;
     padding: 20px 0;
 }
 
@@ -30,7 +35,8 @@ header {
 
 .menu {
     width: 50%;
-    text-align: right;
+    height: auto;
+    text-align: center;
 }
 
 .menu a {
@@ -39,6 +45,10 @@ header {
     text-decoration: none;
     font-weight: bold;
     margin-right: 15px;
+}
+
+.menu a:hover {
+    color: #017143;
 }
 
 section.sobre {
@@ -66,10 +76,12 @@ section.sobre {
     display: block;
     width: 25px;
     margin: 10px 0;
+    flex-direction: column;
+    border: 0;
 }
 
 .social-media img:hover {
-    transform: scale(20px);
+    opacity: 60%;
 }
 
 .texto-sobre {
@@ -88,12 +100,50 @@ section.sobre {
     max-width: 500px;
 }
 
-.texto-sobre button {
+.starbucks {
+    color: #017143;
+}
+
+.btn {
+    font-family: 'SoDo Sans';
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: 1rem;
     border: 0;
     color: white;
-    border-radius: 10px;
-    width: 80px;
-    height: 30px;
+    border-width: 1px;
+    border-radius: 50px;
+    height: auto;
     cursor: pointer;
     background: #017143;
+    padding: 7px 16px;
+    box-shadow: none;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.btn:hover {
+    border: 1px solid #017143;
+    color: #017143;
+    background: white;
+    transition: 0.2s;
+}
+
+.btn-log {
+    font-family: 'SoDo Sans';
+    font-size: 1.2rem;
+    background: #017143;
+    color: white;
+    border: 1px solid #017143;
+    border-radius: 50px;
+    width: 65px;
+    height: auto;
+    cursor: pointer;
+}
+
+.btn-log:hover {
+    border: 1px solid #017143;
+    color: #017143;
+    background: white;
+    transition: 0.2s;
 }
